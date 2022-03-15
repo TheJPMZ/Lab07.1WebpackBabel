@@ -1,6 +1,4 @@
 import imagen from '../assets/Base.jpg';
-import {pindex} from "../index";
-import {p35a} from "../3.5a/3.5";
 import {p1} from "../1/1";
 import {p3a} from "../3a/3a";
 
@@ -46,6 +44,6 @@ export function p2 (){
         "        </footer>\n"
 
     document.getElementById('img').src = imagen
-    document.getElementById('anti').onmousedown = function () { p3a()}
-    document.getElementById('web').onmousedown = function () { p1()};
+    document.getElementById('anti').onmousedown = () => p3a();
+    document.getElementById('web').onmousedown = () => p1();
 }

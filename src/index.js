@@ -1,6 +1,16 @@
     import {p1} from './1/1.js';
     import css from './index.css';
 
+    const pagina_vieja = "http://52.7.129.145:3301/";
+
+    const numeros = [
+        "Uno",
+        "Dos",
+        "Tres",
+        "Cuadro",
+        "Cinco"
+    ]
+
     export function pindex(){
         document.head.innerHTML = "    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css\"/>\n" +
             "    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n" + "" +
@@ -65,9 +75,13 @@
             "        Jose Pablo Monzon 20309\n" +
             "    </footer>"
 
-        document.getElementById('anti').onmousedown = function () { alert("http://52.7.129.145:3301/") }
-        document.getElementById('web').onmousedown = function () { p1()};
+        document.getElementById('anti').onmousedown = () => alert(pagina_vieja)
+        document.getElementById('web').onmousedown = () => p1();
 
+        const num = document.createElement("div")
+        num.innerText = numeros.map(number => number.length);
+
+        document.body.appendChild(num)
 
     }
 

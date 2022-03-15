@@ -33,5 +33,5 @@ export function p1(){
         "</footer>";
 
     document.getElementById('img').src = Imagen;
-    document.getElementById('anti').onmousedown = function () {p2()};
+    document.getElementById('anti').onmousedown = () => p2();
 }

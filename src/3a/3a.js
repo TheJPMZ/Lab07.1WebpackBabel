@@ -1,5 +1,4 @@
 import Imagen from '../assets/entrada.jpg';
-import {pindex} from "../index";
 import {p35a} from "../3.5a/3.5";
 import {p1} from "../1/1";
 
@@ -46,6 +45,6 @@ export function p3a (){
 
 
     document.getElementById('img').src = Imagen;
-    document.getElementById('anti').onmousedown = function () {p35a()}
-    document.getElementById('web').onmousedown = function () {p1()};
+    document.getElementById('anti').onmousedown = () => p35a();
+    document.getElementById('web').onmousedown = () => p1();
 }

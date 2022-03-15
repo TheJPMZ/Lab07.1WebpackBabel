@@ -1,7 +1,5 @@
 import imagen from '../assets/esposa.jpg';
-import {pindex} from "../index";
 import {p1} from "../1/1";
-
 
 export function p35a (){
     document.body.innerHTML = "\n" +
@@ -45,6 +43,6 @@ export function p35a (){
 
 
     document.getElementById('img').src = imagen;
-    document.getElementById('anti').onmousedown = function () { alert("http://52.7.129.145:3301/") }
-    document.getElementById('web').onmousedown = function () { p1()};
+    document.getElementById('anti').onmousedown = () => alert("http://52.7.129.145:3301/");
+    document.getElementById('web').onmousedown = () => p1();
 }
