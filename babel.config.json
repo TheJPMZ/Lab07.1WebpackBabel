@@ -2,5 +2,9 @@
   "presets": [["@babel/env", {
     "corejs" : 3.21,
     "useBuiltIns" : "usage"
-  }]]
+  }]],
+  "plugins": [
+    "babel-plugin-styled-components",
+    "transform-flow-strip-types"
+  ]
 }
