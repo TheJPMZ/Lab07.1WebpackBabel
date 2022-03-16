@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "run_babel": "babel src -d output_babel"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
     "@babel/core": "^7.17.7",
     "@babel/preset-env": "^7.16.11",
     "animate.css": "^4.1.1",
