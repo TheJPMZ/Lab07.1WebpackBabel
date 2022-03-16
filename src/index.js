@@ -75,8 +75,10 @@
             "        Jose Pablo Monzon 20309\n" +
             "    </footer>"
 
-        document.getElementById('anti').onmousedown = () => alert(pagina_vieja)
+        document.getElementById('anti').onmousedown = () => alerta(pagina_vieja);
         document.getElementById('web').onmousedown = () => p1();
+
+        let alerta = (x: string):null => alert(x)
 
         const num = document.createElement("div")
         num.innerText = numeros.map(number => number.length);
